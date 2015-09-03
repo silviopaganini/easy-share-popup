@@ -1,5 +1,5 @@
 var Share = function(url){
-    this.url = url;
+    this.url = url || "";
 }
 
 Share.prototype.openWin = function(url, w, h) {
