@@ -1,6 +1,6 @@
 {
   "name": "easy-share-popup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Share popup module to easy add sharing to website",
   "main": "index.js",
   "repository": {

@@ -11,7 +11,7 @@ Share.prototype.openWin = function(url, w, h) {
 
 }
 
-Share.prototype.plus = function(url='') {
+Share.prototype.plus = function(url) {
 
     var url = encodeURIComponent(url || this.url);
 
@@ -19,45 +19,45 @@ Share.prototype.plus = function(url='') {
 
 }
 
-Share.prototype.pinterest = function(url='', media='', descr='') {
+Share.prototype.pinterest = function(url, media, descr) {
 
     var url   = encodeURIComponent(url || this.url);
-    var media = encodeURIComponent(media);
-    var descr = encodeURIComponent(descr);
+    var media = encodeURIComponent(media || "");
+    var descr = encodeURIComponent(descr || "");
 
     this.openWin("http://www.pinterest.com/pin/create/button/?url=" + url + "&media="+media+"&description=" + description, 735, 310);
 
 }
 
-Share.prototype.tumblr = function(url='', media='', descr='') {
+Share.prototype.tumblr = function(url, media, descr) {
 
     var url   = encodeURIComponent(url || this.url);
-    var media = encodeURIComponent(media);
-    var descr = encodeURIComponent(descr);
+    var media = encodeURIComponent(media || "");
+    var descr = encodeURIComponent(descr || "");
 
     this.openWin("http://www.tumblr.com/share/photo?source=" + media + "&caption="+ descr + "&click_thru=" + url, 450, 430);
 
 }
 
-Share.prototype.facebook = function(url='', copy='') {
+Share.prototype.facebook = function(url, copy) {
 
     var url   = encodeURIComponent(url || this.url);
-    var descr = encodeURIComponent(copy);
+    var descr = encodeURIComponent(copy || "");
 
     this.openWin("http://www.facebook.com/share.php?u="+url+"&t=" + descr, 600, 300);
 
 }
 
-Share.prototype.twitter = function(url='', copy='') {
+Share.prototype.twitter = function(url, copy) {
 
     var url = encodeURIComponent(url || this.url);
-    var descr = encodeURIComponent(copy);
+    var descr = encodeURIComponent(copy || "");
 
     this.openWin("http://twitter.com/intent/tweet/?text="+ descr + "&url=" + url, 600, 300);
 
 }
 
-Share.prototype.renren = function(url='') {
+Share.prototype.renren = function(url) {
 
     var url = encodeURIComponent(url || this.url);
 
@@ -65,7 +65,7 @@ Share.prototype.renren = function(url='') {
 
 }
 
-Share.prototype.weibo = function(url='') {
+Share.prototype.weibo = function(url) {
 
     var url = encodeURIComponent(url || this.url);
 
