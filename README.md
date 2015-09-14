@@ -1,5 +1,7 @@
 # Easy-share-popup
 
+[![npm version](https://badge.fury.io/js/easy-share-popup.svg)](http://badge.fury.io/js/easy-share-popup)
+
 ## Usage
 
 ### Install module
