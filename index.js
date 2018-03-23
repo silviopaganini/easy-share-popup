@@ -73,6 +73,14 @@ Share.prototype.weibo = function(url) {
 
 }
 
+Share.prototype.pinterest = function(url, copy) {
+
+    var url = encodeURIComponent(url || this.url);
+    var descr = encodeURIComponent(copy || "");
+
+    this.openWin("http://pinterest.com/pin/create/button/?description="+ descr + "&url=" + url, 600, 300);
+}
+
 if ( typeof module === 'object' ) {
 
     module.exports = Share;
